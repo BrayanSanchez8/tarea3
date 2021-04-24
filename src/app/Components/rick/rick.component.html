@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <title>
+      <div id="top"></div>
+       Rick & Morty
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<body style="background-color: black;">
+<div id="top">
+  <div class="container">
+
+    <img   class="animate__animated animate__rollIn" style="display: block; margin: 0 auto" src="https://occ-0-2705-1001.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABcb0yL8KdS3lxlB7w7kD6GfBTivnVVTfpiW0ZQTi6nvwWZIEpS5rU5iFeO_kJxGzEDnOaLx7iq0zM3FJc5e1gGqEGcaCkNotiOAl.png">
+
+
+
+
+<ul>
+
+
+    <li *ngFor="let nombress of nombre; index as i">
+      {{nombress}}
+    <br>
+     <img src="{{imagen[i]}}">
+    <br>
+     Especie: {{Especie[i]}}
+      <br>
+     Estado de vida: {{Estado[i]}}
+      <br> <br> <br> <br>
+    </li>
+
+</ul>
+
+
+<div style="text-align: right;" id="footerPage">
+
+
+
+  <button id="back"   class="btn btn-primary" (click)="back()"><<</button>
+ <button id="next" class="btn btn-primary" (click)="next()">>></button>
+</div>
+
+
+ </div>
+
+
+
+
+
+</div>
+</body>
+</html>
